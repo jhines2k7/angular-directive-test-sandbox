@@ -5,7 +5,7 @@ describe('A simple directive', function() {
     var compile, scope, directiveElement;
 
     beforeEach(function() {
-        module('directives');
+        module('directives', 'sandbox.templates');
 
         inject(function($compile, $rootScope) {
             compile = $compile;
